@@ -5,10 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <title>Weather app</title>
+  <title>Weather App</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
+    <form id="input">
+      <input
+        class="data"
+        type="text"
+        placeholder="Enter your city"
+        name="location-data"
+      />
+    </form>
+    <div id="quote">Get exact weather details from  <span id="source">openweathermap</span>  API</div>
+    <div class="hidden" id="loader"></div>
+    <div class="details hidden">
+      <h2 id="location">
+        <span id="place"></span>, <span id="country"></span>
+      </h2>
+      <span id="date"></span>
+      <span id="temp"></span>
+      <span id="description"></span>
+      <span class="other">
+        <span id="low"></span> / <span id="high"></span>
+      </span>
+    </div>
+  </div>
   <script src="weather.js"></script>
 </body>
 </html>
